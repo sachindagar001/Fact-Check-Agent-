@@ -17,7 +17,7 @@ def get_config(key, default=""):
 
 TAVILY_API_KEY = get_config("TAVILY_API_KEY")
 OPENROUTER_API_KEY = get_config("OPENROUTER_API_KEY")
-OPENROUTER_MODEL = get_config("OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free")
+OPENROUTER_MODEL = get_config("OPENROUTER_MODEL", "nex-agi/nex-n2-pro:free")
 
 MAX_CLAIMS = int(get_config("MAX_CLAIMS", "5"))
 MAX_CONTEXT_CHARS = int(get_config("MAX_CONTEXT_CHARS", "8000"))
