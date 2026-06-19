@@ -1,3 +1,7 @@
+To make the video play directly inside the GitHub README (instead of just showing a link), you need to use the Markdown image syntax `![Alt text](video_url)`. GitHub will automatically detect that it's a video file and convert it into an embedded video player.
+
+Here is the updated `README.md` file:
+
 ```markdown
 # 🔍 The Fact-Check Agent
 
@@ -5,7 +9,7 @@ An AI-powered tool that extracts verifiable claims from marketing PDFs, cross-re
 
 ## 📺 Demo Video
 
-https://github.com/sachindagar001/Fact-Check-Agent-/raw/32b85f9fe79f6053c91279bc0518781f65463735/Fact%20check%20agent%20demo%20video.mp4
+![Fact Check Agent Demo Video](https://github.com/sachindagar001/Fact-Check-Agent-/raw/32b85f9fe79f6053c91279bc0518781f65463735/Fact%20check%20agent%20demo%20video.mp4)
 
 ---
 
