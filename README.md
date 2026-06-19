@@ -1,8 +1,3 @@
-Here is a clean, professional `README.md` file for your project. I've included a placeholder at the top for your video. 
-
-If your video is on YouTube, you can replace the placeholder line with:
-`[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://youtu.be/YOUR_VIDEO_ID)`
-
 ***
 
 ```markdown
