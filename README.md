@@ -1,7 +1,3 @@
-To make the video play directly inside the GitHub README (instead of just showing a link), you need to use the Markdown image syntax `![Alt text](video_url)`. GitHub will automatically detect that it's a video file and convert it into an embedded video player.
-
-Here is the updated `README.md` file:
-
 ```markdown
 # 🔍 The Fact-Check Agent
 
