@@ -1,50 +1,45 @@
-***
-
 ```markdown
 # 🔍 The Fact-Check Agent
 
-Upload a marketing PDF to automatically extract verifiable claims, cross-reference them against live web data, and flag inaccuracies. 
+An AI-powered tool that extracts verifiable claims from marketing PDFs, cross-references them against live web data, and flags inaccuracies.
 
-## 📺 Demo
+## 📺 Demo Video
 
-<!-- EMBED YOUR VIDEO HERE -->
-Fact check agent demo video.mp4
-
-*(Replace the link above with your video embed or YouTube link)*
+https://github.com/sachindagar001/Fact-Check-Agent-/raw/32b85f9fe79f6053c91279bc0518781f65463735/Fact%20check%20agent%20demo%20video.mp4
 
 ---
 
 ## ✨ Features
 
 - **In-App PDF Viewer:** Read the uploaded document directly inside the app without needing to open it externally.
-- **Smart Claim Extraction:** Uses an LLM to identify only objective, verifiable claims (statistics, dates, financials), ignoring subjective marketing fluff.
-- **Live Web Verification:** Cross-references extracted claims with real-time web searches via Tavily.
+- **Intelligent Claim Extraction:** Uses an LLM to identify objective, verifiable claims (statistics, dates, financials) while ignoring marketing fluff.
+- **Live Web Verification:** Cross-references extracted claims with real-time web search via Tavily.
 - **Clear Verdicts:** Classifies claims as ✅ Verified, ⚠️ Inaccurate (with corrections), or ❌ False, complete with source URLs.
-- **Export Reports:** Download the final fact-check report as JSON or Markdown.
+- **Exportable Reports:** Download the final fact-check report as JSON or Markdown.
 
 ## 🛠️ Tech Stack
 
 - **Frontend/UI:** Streamlit
-- **LLM Engine:** OpenRouter (Default: Meta Llama 3.3 70B)
+- **LLM Engine:** OpenRouter (Meta Llama 3.3 70B)
 - **Web Search:** Tavily API
 - **PDF Parsing:** PyPDF
 
 ## 📂 Project Structure
 
-The application is modularized for easy maintenance:
-
-- `app.py` - Main Streamlit UI and application flow.
-- `config.py` - Environment variables and configuration constants.
-- `prompts.py` - LLM prompt templates for extraction and verification.
-- `services.py` - API handlers for OpenRouter and Tavily (with retry logic).
-- `helpers.py` - Utility functions (PDF parsing, JSON extraction, Markdown rendering).
+```text
+├── app.py          # Main Streamlit UI and application flow
+├── config.py       # Environment variables and configuration constants
+├── prompts.py      # LLM prompt templates for extraction and verification
+├── services.py     # API handlers for OpenRouter and Tavily (with retry logic)
+└── helpers.py      # Utility functions (PDF parsing, JSON extraction, Markdown rendering)
+```
 
 ## 🚀 Setup & Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/fact-check-agent.git
-   cd fact-check-agent
+   git clone https://github.com/sachindagar001/Fact-Check-Agent-.git
+   cd Fact-Check-Agent-
    ```
 
 2. **Install dependencies**
@@ -53,8 +48,8 @@ The application is modularized for easy maintenance:
    ```
 
 3. **Configure API Keys**
-   
-   Create a `.env` file in the root directory and add your keys:
+
+   Create a `.env` file in the root directory:
    ```env
    TAVILY_API_KEY=your_tavily_api_key_here
    OPENROUTER_API_KEY=your_openrouter_api_key_here
@@ -69,9 +64,11 @@ The application is modularized for easy maintenance:
 
 ## 📖 How to Use
 
-1. Open the app in your browser (usually `http://localhost:8501`).
-2. Upload a marketing PDF using the file uploader.
-3. Expand the **"View Uploaded PDF"** section to read the document in-app.
-4. Click **"🚀 Start Fact-Checking"**.
-5. View the interactive report and download the results as JSON or Markdown.
+1. Once the app is running, open your browser and go to `http://localhost:8501`.
+2. Click the **"📤 Upload PDF Document"** area or drag and drop your marketing PDF into the box.
+3. Click the **"📄 View Uploaded PDF"** dropdown to expand the built-in viewer and read through the document.
+4. When you are ready to analyze the document, click the red **"🚀 Start Fact-Checking"** button.
+5. Wait a few moments while the AI extracts claims and searches the web. The progress bar will show you the status.
+6. Once complete, view the interactive report at the bottom of the page, which displays whether claims are Verified, Inaccurate, or False, along with the evidence.
+7. Finally, use the **"⬇️ JSON"** or **"⬇️ Markdown"** buttons to download and save the final fact-check report.
 ```
