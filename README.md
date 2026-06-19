@@ -8,7 +8,7 @@ Upload a marketing PDF to automatically extract verifiable claims, cross-referen
 ## 📺 Demo
 
 <!-- EMBED YOUR VIDEO HERE -->
-https://github.com/user-attachments/assets/your-video-id-here
+Fact check agent demo video.mp4
 
 *(Replace the link above with your video embed or YouTube link)*
 
